@@ -1,11 +1,15 @@
+import dotenv from "dotenv";
+dotenv.config();
+
 import mongoose from "mongoose";
-const baseUrl = process.env.MONGODB || "0.0.0.0:27017";
+
+const Url = process.env.MONGODB || "mongodb://0.0.0.0:27017/issueTrackerDB";
 
 export const connectToDb = async () => {
   try {
-    await mongoose.connect(`mongodb://${baseUrl}/issueTracker`);
-    console.log("MongoDB connected using mongoose");
+    await mongoose.connect(Url);
+    console.log("MongoDB connected successfully using mongoose");
   } catch (err) {
-    console.log(err);
+    console.error("Error connecting to MongoDB:", err);
   }
 };

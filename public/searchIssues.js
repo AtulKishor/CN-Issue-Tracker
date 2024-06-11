@@ -19,7 +19,7 @@ searchIssueForm.addEventListener('submit', function (e) {
     searchIssueForm.querySelector('input[name="des"]').value;
   //add issue to searched issues array
   searchIssues.map((el) => {
-    if (el.title.includes(titleValue) || el.description.includes(descriptionValue)) {
+    if (el.title == titleValue || el.description ==descriptionValue) {
       if (!searchedIssues.includes(el)) {
         searchedIssues.push(el);
       }
