@@ -12,12 +12,12 @@
   },
   "author": "Atul Kishor",
   "license": "ISC",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/AtulKishor/CN-Issue-Tracker/issues"
   },
   "homepage": "https://github.com/AtulKishor/CN-Issue-Tracker#readme",
   "dependencies": {
-    "config": "^3.3.11",
     "dotenv": "^16.4.5",
     "ejs": "^3.1.10",
     "express": "^4.19.2",

@@ -1,0 +1,12 @@
+<div class="w-50 border border-secondary p-3 m-auto bg-secondary bg-gradient rounded-3">
+  <h3 class="h-5 p-3 mb-2 bg-warning text-white rounded">
+    Project : <%= project.name %>
+  </h3>
+  <h4 class="h-6 p-3 mb-2 bg-danger text-dark rounded">
+    Author : <%= project.author %>
+  </h4>
+  <h5 class="h-6 p-3 mb-2 bg-success text-dark rounded">
+    Description : <%= project.description %>
+  </h5>
+</div>
+<%-include('./partials/_issues'); %>
